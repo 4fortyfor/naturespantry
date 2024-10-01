@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #bec17c;
+}
+
+h1, h2, p, address, a {
+    font-family: "dejanire-headline", serif;
+    font-style: italic;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-column img {
+    max-width: 50%;
+    height: fit-content;
+    top: 25%;
+    left: 25%;
+    position: relative;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Centers content vertically */
+    align-items: center;       /* Centers content horizontally */
+    text-align: center;        /* Centers text within the elements */
+    height: 100vh;             /* Optional: Makes the column full viewport height */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
